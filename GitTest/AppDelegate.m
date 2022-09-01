@@ -38,6 +38,7 @@
     
    NSLog(@"MMLLCC----%@",[self MLCLongestPalindrome:@"abcocnpncoccd"]) ;
     NSLog(@"change test");
+    NSLog(@"change test1111");
     
     return YES;
 }
