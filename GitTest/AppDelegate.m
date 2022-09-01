@@ -37,6 +37,7 @@
     NSLog(@"baoli huiwen----%@",[self getLongestPalindrome:@"babad"]);
     
    NSLog(@"MMLLCC----%@",[self MLCLongestPalindrome:@"abcocnpncoccd"]) ;
+    NSLog(@"change test");
     
     return YES;
 }
