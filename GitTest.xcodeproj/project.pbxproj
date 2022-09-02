@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F839770128C1A44400D2B85D /* IntegerInversion.m in Sources */ = {isa = PBXBuildFile; fileRef = F839770028C1A44400D2B85D /* IntegerInversion.m */; };
+		F839770428C1D7C200D2B85D /* Algorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = F839770328C1D7C200D2B85D /* Algorithm.m */; };
 		F88116AA28B8B83500F15D84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F88116A928B8B83500F15D84 /* AppDelegate.m */; };
 		F88116AD28B8B83500F15D84 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F88116AC28B8B83500F15D84 /* SceneDelegate.m */; };
 		F88116B028B8B83500F15D84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F88116AF28B8B83500F15D84 /* ViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F83976FF28C1A44400D2B85D /* IntegerInversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntegerInversion.h; sourceTree = "<group>"; };
+		F839770028C1A44400D2B85D /* IntegerInversion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntegerInversion.m; sourceTree = "<group>"; };
+		F839770228C1D7C200D2B85D /* Algorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Algorithm.h; sourceTree = "<group>"; };
+		F839770328C1D7C200D2B85D /* Algorithm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Algorithm.m; sourceTree = "<group>"; };
 		F88116A528B8B83500F15D84 /* GitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88116A828B8B83500F15D84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F88116A928B8B83500F15D84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +87,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F83976FE28C1A3DD00D2B85D /* IntegerInversion */ = {
+			isa = PBXGroup;
+			children = (
+				F83976FF28C1A44400D2B85D /* IntegerInversion.h */,
+				F839770028C1A44400D2B85D /* IntegerInversion.m */,
+				F839770228C1D7C200D2B85D /* Algorithm.h */,
+				F839770328C1D7C200D2B85D /* Algorithm.m */,
+			);
+			path = IntegerInversion;
+			sourceTree = "<group>";
+		};
 		F881169C28B8B83500F15D84 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +121,7 @@
 		F88116A728B8B83500F15D84 /* GitTest */ = {
 			isa = PBXGroup;
 			children = (
+				F83976FE28C1A3DD00D2B85D /* IntegerInversion */,
 				F88116A828B8B83500F15D84 /* AppDelegate.h */,
 				F88116A928B8B83500F15D84 /* AppDelegate.m */,
 				F88116AB28B8B83500F15D84 /* SceneDelegate.h */,
@@ -267,9 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F88116B028B8B83500F15D84 /* ViewController.m in Sources */,
+				F839770428C1D7C200D2B85D /* Algorithm.m in Sources */,
 				F88116AA28B8B83500F15D84 /* AppDelegate.m in Sources */,
 				F88116BB28B8B83700F15D84 /* main.m in Sources */,
 				F88116AD28B8B83500F15D84 /* SceneDelegate.m in Sources */,
+				F839770128C1A44400D2B85D /* IntegerInversion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

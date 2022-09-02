@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-
+#import "Algorithm.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +16,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    Algorithm *ar = [[Algorithm alloc]init];
+    NSLog(@"hhhhhh%ld",(long)[ar changeStrToInteger:@"  -42"]);
 }
 
 

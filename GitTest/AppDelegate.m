@@ -37,10 +37,35 @@
     NSLog(@"baoli huiwen----%@",[self getLongestPalindrome:@"babad"]);
     
    NSLog(@"MMLLCC----%@",[self MLCLongestPalindrome:@"abcocnpncoccd"]) ;
-    NSLog(@"change test");
-    NSLog(@"change test1111");
+    
+    
+    NSLog(@"ZZZ---%@",[self convert:@"PAYPALISHIRING" rows:4]);
+    
+    
     
     return YES;
+}
+- (NSString *)convert:(NSString *)str rows:(NSInteger)row{
+    NSInteger len = str.length;
+    NSInteger r = row;//行数
+    NSInteger t = 2*r -2;//周期
+    if (r == 1) {
+        return str;
+    }
+    NSMutableArray *vl = [NSMutableArray arrayWithCapacity:0];
+    NSInteger x=0;
+    for (NSInteger i=0; i<len; i++) {
+        vl[x] = [NSString stringWithFormat:@"%@%@",(vl.count>0&&vl.count>x)?(vl[x]):@" ",[str substringWithRange:NSMakeRange(i, 1)]]  ;
+        if (i%t<r-1) {
+            x++;//向下移动
+        }else x--;//向上移动
+        
+    }
+    NSString *ans = @"";
+    for (NSString *s1 in vl) {
+        ans = [ans stringByAppendingString:s1];
+    }
+    return ans;
 }
 //马拉车 回文
 - (NSString *)MLCLongestPalindrome:(NSString *)str{
