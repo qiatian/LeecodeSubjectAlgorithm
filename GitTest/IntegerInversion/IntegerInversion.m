@@ -3,7 +3,7 @@
 //  GitTest
 //
 //  Created by Qianyinhulian on 2022/9/2.
-//
+//整数反转
 
 #import "IntegerInversion.h"
 
@@ -13,10 +13,14 @@
     NSInteger result = 0;
     
     while (num!=0) {
-        NSInteger temp = num % 10;
+        NSInteger temp = result*10 + num % 10 ;
+        
+        if (temp / 10 != result)
+                        return 0;
+        result = temp;
         num/=10;
         
-        result = temp * 10 + result;
+        
     }
     
     return result;

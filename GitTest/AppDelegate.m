@@ -39,7 +39,7 @@
    NSLog(@"MMLLCC----%@",[self MLCLongestPalindrome:@"abcocnpncoccd"]) ;
     
     
-    NSLog(@"ZZZ---%@",[self convert:@"PAYPALISHIRING" rows:4]);
+    NSLog(@"ZZZ字形变换---%@",[self convert:@"PAYPALISHIRING" rows:4]);
     
     
     
